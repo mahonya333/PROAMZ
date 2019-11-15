@@ -17,10 +17,15 @@ ul,li{
     padding: 0;
     list-style: none;
 }
-a{
+.link{
     display: inline-block;
     text-decoration: none;
     color: #fff;
+    transition: all .4s;
+    &:hover{
+        color: inherit;
+        text-decoration: none;
+    }
 }
 .wrapper {
 	display: flex;
@@ -28,11 +33,9 @@ a{
     min-height: 100%;
     background-color: #050505;
     color: #fff;
-    a{
-        color: #fff;
-    }
-    .container{
-        max-width: 1360px;
+    .container-fluid{
+        max-width: 1920px;
+        width: 100%;
         margin: 0 auto;
         padding: 0 20px;
     }
