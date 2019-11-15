@@ -114,7 +114,7 @@ ul, li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 430px;
+  max-width: 430px;
 }
 
 .header__control .header__btn {
