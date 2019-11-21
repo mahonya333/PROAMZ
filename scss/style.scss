@@ -38,6 +38,7 @@
     align-items: center;
     justify-content: space-between;
     max-width: 430px;
+    width: 100%;
 }
 .header__control {
     .header__btn{
@@ -502,7 +503,72 @@
     }
 }
 .about__schedule{
-    margin-top: 180px;
+    margin: 180px auto 90px auto;
+    max-width: 587px;
+    height: 387px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.daterangepicker{
+    background-color: #252525;
+    border: 1px solid transparent;
+    tbody{
+        background-color: inherit;
+    }
+    tr{
+        display: flex;
+        justify-content: center;
+    }
+    thead{
+        background-color: #202020;
+
+    }
+}
+.drp-calendar{
+    width: 262px;
+}
+
+.daterangepicker .drp-calendar.left{
+    padding: 0;
+    border-right: 1px solid #353535;
+}
+.daterangepicker .drp-calendar.right{
+    padding: 0;
+}
+.daterangepicker .drp-calendar.left .calendar-table{
+    padding: 0;
+}
+.daterangepicker .calendar-table{
+    background-color: inherit;
+    border: 1px solid transparent;
+}
+.daterangepicker td.start-date.end-date{
+    border-radius: 50%;
+}
+.daterangepicker td.active, .daterangepicker td.active:hover{
+    background-color: #3AC737;
+    border-radius: 50%;
+
+}
+.daterangepicker .calendar-table th, .daterangepicker .calendar-table td{
+    min-width: auto;
+    width: 18px;
+    height: 18px;
+    font-family: $comfortaa;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+    color: #fff;
+}
+.daterangepicker td.in-range{
+    background-color: #3AC737
+}
+.daterangepicker td.off, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date, .daterangepicker td.off.end-date{
+    background-color: inherit;
 }
 .about__socials-list{
     li + li{
@@ -727,13 +793,13 @@
 // footer end
 
 // popup start
-.popup{
+.popup,
+.popup-registration,
+.popup-download{
     padding: 42px 27px 45px 27px;
-    max-width: 538px;
-    width: 100%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.85);
     background-color: #252525;
-    min-height: 319px;
-    margin: 0 auto;
+
     .popup__top{
         display: flex;
         justify-content: space-between;
@@ -789,4 +855,73 @@
     }
 }
 // popup end
-  
+.popup-registration{
+    .popup__form-registration{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    input{
+        width: 48%;
+    }
+    input::placeholder{
+        color: #afafaf;
+    }
+    option{
+        color: #afafaf;
+    }
+    .jq-selectbox{
+        width: 48%;
+        margin-bottom: 16px;
+    }
+    .jq-selectbox__select {
+        width: 100%;
+        height: auto;
+        padding: 13px 35px 13px 42px;
+        border: 1px solid #353535;
+        border-bottom-color: #353535;
+        border-radius: 0px;
+        background: transparent;
+        box-shadow: none;
+        font-family: $comfortaa;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 300;
+        color: #c6c6c6;
+        text-shadow: none;
+    }
+    .jq-selectbox__trigger{
+        border-left: none;
+    }
+    .jq-selectbox__trigger-arrow{
+        top: 18px;
+        right: 16px;
+    }
+}
+.popup-download{
+    .jq-file {
+        width: 100%;
+        box-shadow: none;
+    }
+    .jq-file__name {
+        width: 100%;
+        height: auto;
+        padding: 13px 35px 13px 42px;
+        border: 1px solid #353535;
+        border-bottom-color: #353535;
+        border-radius: 0px;
+        background: transparent;
+        box-shadow: none;
+        font-family: $comfortaa;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 16px;
+        color: #333;
+    }
+    .jq-file__browse{
+        display: none;
+    }
+    input::placeholder{
+        color: #afafaf;
+    }
+}

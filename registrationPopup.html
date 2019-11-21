@@ -10,18 +10,32 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/jquery.formstyler.css" rel="stylesheet" />
+    <link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="popup">
+    <div class="popup-registration">
         <div class="popup__top">
-            <a href="#" class="link popup__link popup__link-create">Create Account </a>
-            <a href="#" class="link popup__link popup__link-sing popup__link--active">Sing in</a>
+            <a href="#" class="link popup__link popup__link-create popup__link--active">Create Account </a>
+            <a href="#" class="link popup__link popup__link-sing ">Sing in</a>
         </div>
-        <form class="popup__form">
+        <form class="popup__form-registration">
+            <input type="text" placeholder="Full name*" required>
             <input type="email" placeholder="E-mail*" required>
+            <select required >
+                <option selected>Country</option>
+                <option>Ukraine</option>
+                <option>England</option>
+            </select>
+            <select required>
+                <option >Language</option>
+                <option>EN</option>
+                <option>RUS</option>
+                <option>UA</option>
+            </select>
             <input type="password" placeholder="Password*" required>
+            <input type="password" placeholder="Confirm password*" required>
             <button type="submit">Confirm</button>
         </form>
     </div>
