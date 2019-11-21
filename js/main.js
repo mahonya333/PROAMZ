@@ -1,5 +1,5 @@
 $(function () {
-/*     $('.slider__items').slick({
+    $('.slider__items').slick({
         dots: true,
         prevArrow: '<button type="button" class="slick-arrow slick-prev"><img src="images/arrow-left.svg" alt=""> prev</button>',
         nextArrow: '<button type="button" class="slick-arrow slick-next">next <img src="images/arrow-right.svg" alt=""></button>',
@@ -14,6 +14,6 @@ $(function () {
     $ ('.about__schedule').daterangepicker({
         opens: 'center',
         drops: 'up', 
-    }); */
+    });
     $('input[type="file"], select').styler();
 });
